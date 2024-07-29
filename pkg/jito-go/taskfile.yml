@@ -1,0 +1,15 @@
+version: '3'
+
+tasks:
+    install:linux:
+        cmds:
+            - sh scripts/run.sh
+    install:darwin:
+        cmds:
+            - sh scripts/run.sh
+    install:windows:
+        cmds:
+            - cmd /c scripts\run.bat
+    test:
+        cmds:
+            - go test ./...
